@@ -3,11 +3,7 @@
 Clean, professional single-page portfolio.
 
 ## To Do:
-- google scholar
-- copy right sign
-- profile image
-- 
-
+- book 1:1 -> calendly link
 
 
 ## Local Preview
