@@ -1,405 +1,253 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Ryan Golapayegani</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/Reza_Golpayegani_1.jpg" >
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Golpayegani | ML / AI Engineer</title>
+  <link rel="icon" href="images/favicon-32x32-transparent.png" type="image/png">
+  <meta name="description" content="Ryan Golpayegani — ML/AI Engineer specializing in computer vision, production ML systems, and backend infrastructure.">
+  <meta name="color-scheme" content="dark light">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      const saved = localStorage.getItem('theme');
+      // Default to dark (distinct from Arian's light-first design)
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 </head>
-
 <body>
 
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+    <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+  </button>
 
-
-   <!---
-   <-- Header
-   ================================================== --
-   <header id="home">
-
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#CV">CV</a></li>
-            <--<li><a class="smoothscroll" href="#portfolio">Works</a></li> --
-            <-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> --
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <-- end #nav --
-
-      </nav> <-- end #nav-wrap --
-<--
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">Reza Golapayegani<br><br></h1>
-            <h3>I'm an Electrical Engineering Student at <a class="smoothscroll" href="https://en.kntu.ac.ir/">K. N. Toosi University of Technology</a>. Let's start scrolling</a>
-            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
-            <hr />
-            <ul class="social">
-               <li><a href="https://www.facebook.com/reza.golpayegani.1"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="https://twitter.com/rgolpayegani"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/rezagolpayegani/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://instagram.com/rezagolpayegani_"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://github.com/RezaGolpayegani"><i class ="fa fa-github"></i></a></li>
-               <li><a href="reza.golpayegani1379@gmail.com"><i class ="fa fa-envelope"></i></a></li>
-               <li><a href="https://join.skype.com/invite/iN6pYxvEkRTQ"><i class="fa fa-skype"></i></a></li>
-               <--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>--
-               <--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>--
-            </ul>
-         </div>
+  <header class="hero">
+    <div class="wrapper hero-inner">
+      <div class="hero-photo" aria-label="Ryan Golpayegani">
+        <img src="images/profile_picture_zoomed.JPG" alt="Ryan Golpayegani">
       </div>
+      <div>
+        <p class="eyebrow"><span class="dot"></span> Saskatoon, SK </p>
+        <h1>Ryan Golpayegani</h1>
+        <h2><strong>Machine Learning Engineer</strong></h2>
+        <p class="hero-summary">
+          Turning complex ML models into scalable, production-ready software to drive tangible business values.     
+        </p>
+        
+        <div class="hero-links">
+          <a class="btn btn-primary" href="mailto:ryan.golpayegani@gmail.com">For the most updated résumé, shoot me an email.</a> 
+          <div class="hero-links-row">
+          <a class="btn btn-ghost" href="mailto:ryan.golpayegani@gmail.com">Email</a>
+          <a class="icon-link" href="https://www.linkedin.com/in/ryangolpayegani/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="icon-link" href="https://github.com/RyanGolpayegani" target="_blank" rel="noopener">GitHub</a>
+          <a class="icon-link" href="https://scholar.google.com/citations?user=jch6NqoAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
+  <main>
+    <div class="wrapper">
 
-   </header> <-- Header End --
-
--->
-
-
-
-
-   <!-- About Section
-   ================================================== --> 
-   <section id="about">
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <!-- <li class="current"><a class="smoothscroll" href="#home">Home</a></li> -->
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#CV">CV</a></li>
-            
-            <!--<li><a class="smoothscroll" href="#portfolio">Works</a></li> -->
-            <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-            <li><a href="./publication.html">publication</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-      <div class="row"><!--<div class="row">-->	
-         <div class="four columns"> <!-- three columns -->
-               <div class="center">
-                  <img class="profile-pic"  src="images/Reza_Golpayegani_1.jpg"  />
-                  <br><c>Ryan (Reza) Golpayegani</c> 
-                  
-                  <br><d>Electrical Engineering Student at <a href="https://en.kntu.ac.ir/" target="_blank"> K. N. Toosi University of Technology</a></d>
-                  
-                  <div class="row">
-                     <ul class="social">
-                        <li><a href="mailto:ryan.golpayegani@gmail.com" target="_blank"><i class ="fa fa-envelope"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/ryangolpayegani/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/RyanGolpayegani" target="_blank"><i class ="fa fa-github"></i></a></li>
-                        <!--<li><a href="https://join.skype.com/invite/iN6pYxvEkRTQ" target="_blank"><i class="fa fa-skype"></i></a></li>-->
-                        <li><a href="https://instagram.com/rezagolpayegani_" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://www.facebook.com/reza.golpayegani.1" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <!--<li><a href="https://twitter.com/rgolpayegani" target="_blank"><i class="fa fa-twitter"></i></a></li> -->
-                        <!--<li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>-->
-                        <!--<li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>-->
-                  </ul>
-               </div>
+      <section class="section">
+        <h3 class="section-label">About</h3>
+        <p class="about-text">
+          I'm a Machine Learning Engineer with 2+ years of experience building scalable, production ready ML systems. Formerly at NutraMate, I architected agentic AI systems that automate pharmacy workflows, combining advanced LLM frameworks with scalable backend services.
+        </p>
+        <p class="about-text">
+          I’m looking for opportunities where I can bridge software engineering and machine learning to solve real-world problems.
+        </p>
+        <p class="about-text">
+          What engineering principles guides my work:
+        </p>
+        <div class="principles">
+          <div class="principle">
+            <div class="principle-bar"></div>
+            <div>
+              <strong>Ship the baseline, then iterate</strong>
+              <span>Get a working system into production quickly, then add complexity where it makes sense.</span>
             </div>
-         </div>
-
-         <div class="eight columns">
-
-            <h2>About Me</h2>
-            <p>- Self-motivated Data Scientist interested in Machine Learning,
-                Deep Learning, Natural Language Processing (NLP)
-                 and computer vision. I am passionate about learning
-                  new things and collaborating as an active team member.
-                   Currently, I spend on learning and practicing to develop my skills. 
-            </p>
-            <p>- Experienced Teacher Assistant with a demonstrated
-                history of working in the higher education industry.
-                 Skilled in Python, C++, MATLAB.
-            </p>
-
-            <h2>Research Interests:</h2>
-            <p>
-               <ii class="fa fa-circle" aria-hidden="true"></ii> Machine Learning<br>
-               <ii class="fa fa-circle" aria-hidden="true"></ii> Deep Learning<br>
-               <ii class="fa fa-circle  aria-hidden="true"></ii> Natural Language Processing<br>
-               <ii class="fa fa-circle" aria-hidden="true""></ii> Computer Vision<br>
-               <ii class="fa fa-circle" aria-hidden="true"></ii> Image Processing<br>
-            </p>
-
-            
-            
-
-         </div> <!-- end .main-col -->
-
-      </div>
-
-   </section> <!-- About Section End-->
-
-
-   <!-- CV Section
-   ================================================== -->
-   <section id="CV">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row">
-         <div class="four columns"></div>
-         <div class="eight columns">
-            <!--<div class="columns download"> -->
-               <h1> For the most updated CV send me an email.<br><br>
-               <pp>
-                  <a href="https://drive.google.com/uc?export=download&id=1n76QMqJTSuTRqtPASHguPsW7iLyYMfLX" target="_blank" class="button"><i class="fa fa-download"></i>Download CV</a>
-                  <a href="https://drive.google.com/file/d/1n76QMqJTSuTRqtPASHguPsW7iLyYMfLX/view?usp=sharing" target="_blank" class="button"><i class="fa fa-eye"></i>View CV in Google drive</a>
-               </pp>
-            <!-- </div>-->
-         </div>
-
-      </div> <!-- end row -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3><br><br><a href="https://en.kntu.ac.ir/" target="_blank">K. N. Toosi University of Technology</a></h3>
-                  <p class="info">B.Sc. in Electrical Engineering <span>&bull;</span> <em class="date">September 2018 - Present</em></p>
-
-                  <p>
-                     <!--GPA(last two years): 16.32/20 (3.27/4)<br><br> -->
-                     Activities:<br>
-                     - Teaching Assistant of "Data Structures", "Engineering Probability and Statistics" and "Engineering Economics"<br>
-                     - Participating in ARM course launched by ARAS robotic group <br>
-                     - Programming electrical devices with C and Assembly<br>
-                     - Expert in designing and simulating electrical circuits via PSpice, Proteus Design Suite, Altium Designer, Xilinx ISE, Advanced Design System (ADS), Quartus II and Simulink.<br>
-                     <!-- - Performed efficient electronic structure calculations on N2O molecule with SIESTA computer program implementation and used VESTA software to visualize it.<br>-->
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3><b><br>Emam Ali High School</b></h3>
-                  <p class="info">High School Diploma in Mathematics and Physics <span>&bull;</span> <em class="date">September 2014 - June 2018</em></p>
-
-                  <p>
-                     <!--GPA: 19.92 out of 20<br><br> -->
-                     Activities and societies:<br>
-                     - High school's 1st Rank for four consecutive years (based on highest GPA)<br>
-                     - Member of the basketball team<br>
-                     - Ranked top 1% over 144,000 students in Iran national university entrance exam for B.Sc<br>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-      <!--
-      <-- Work
-      ----------------------------------------------- --
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Awesome Design Studio</h3>
-                  <p class="info">Senior UX Designer <span>&bull;</span> <em class="date">March 2010 - Present</em></p>
-
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                  </p>
-
-               </div>
-
-            </div> <-- item end --
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Super Cool Studio</h3>
-                  <p class="info">UX Designer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
-
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
-
-               </div>
-
-            </div> <-- item end --
-
-         </div> <-- main-col end --
-
-      </div> <-- End Work --
-   -->
-
-
-
-
-      <!--
-      <-- Skills
-      ----------------------------------------------- --
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p>
-               <-- if you want you can add some info herre--
-            </p>
-
-				<div class="bars">
-
-				   <ul class="skills">
-					   <li><span class="bar-expand python"></span><em>Python</em></li>
-                  <li><span class="bar-expand MATLAB"></span><em>MATLAB</em></li>
-						<li><span class="bar-expand ccpp"></span><em>C/C++</em></li>
-						<li><span class="bar-expand linux"></span><em>Linux</em></li>
-						<li><span class="bar-expand git"></span><em>Git</em></li>
-                  <li><span class="bar-expand LaTeX"></span><em>LaTeX</em></li>
-					</ul>
-
-				</div><-- end skill-bars --
-
-			</div> <-- main-col end --
-
-      </div> <-- End skills --
-   -->
-
-   </section> <!-- CV Section End-->
-
-
-
-
-
-
-
-
-   <!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-      <div class="row">
-         <div class="tow columns"></div>
-         <div class="ten columns">
-            <h1>Contact</h1>
-            <p>Should you have any questions, please do not hesitate to contact me.
-            <br>
-            <br>Ryan (Reza) Golapayegani
-            <!-- <br>(+98) 918 631 6982 -->
-            <br>ryan.golpayegani@gmail.com
-            <br>
-            </p>
-
-         </div>
-      </div>
-      
-
-   </section> <!-- Contact Section End-->
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-         
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a href="https://www.facebook.com/reza.golpayegani.1" target="_blank"><i class="fa fa-facebook"></i></a></li>
-<!--                <li><a href="https://twitter.com/rgolpayegani" target="_blank"><i class="fa fa-twitter"></i></a></li> -->
-               <li><a href="https://www.linkedin.com/in/ryangolpayegani/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://instagram.com/rezagolpayegani_" target="_blank"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://github.com/RyanGolpayegani" target="_blank"><i class ="fa fa-github"></i></a></li>
-               <li><a href="mailto:ryan.golpayegani@gmail.com" target="_blank"><i class ="fa fa-envelope"></i></a></li>
-<!--                <li><a href="https://join.skype.com/invite/iN6pYxvEkRTQ" target="_blank"><i class="fa fa-skype"></i></a></li> -->
-               <!--<li><a href="#"><i class="fa fa-dribbble" target="_blank"></i></a></li>-->
-               <!--<li><a href="#"><i class="fa fa-google-plus" target="_blank"></i></a></li>-->
+          </div>
+          <div class="principle">
+            <div class="principle-bar"></div>
+            <div>
+              <strong>Align ML metrics with business goals</strong>
+              <span>Optimization isn't just about loss functions, successful ML systems directly solve product constraints and real-world business objectives.</span>
+            </div>
+          </div>
+          <!-- <div class="principle">
+            <div class="principle-bar"></div>
+            <div>
+              <strong>Title3</strong>
+              <span>text3</span>
+            </div>
+          </div>
+        </div> -->
+      </section>
+
+      <section class="section">
+        <h3 class="section-label">Core Competencies</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4><span>👨‍💻</span>Programming Languages</h4>
+            <p>Python, C++, Bash, MATLAB</p>
+          </div>
+          <div class="skill-card">
+            <h4><span>⚙️</span>ML Tools</h4>
+            <p>LangGraph, LangChain, PyTorch, Tensorflow, Unsloth, Keras, Scikit-learn, OpenCV</p>
+          </div>
+          <div class="skill-card">
+            <h4><span>🛠</span>Backend Development</h4>
+            <p>FastAPI, Django REST Framework, PostgreSQL, Celery</p>
+          </div>
+          <div class="skill-card">
+            <h4><span>☁️</span>MLOps & Cloud</h4>
+            <p>vLLM, MLflow, TensorRT, AWS, GCP, Docker, Kubernetes, Microservices, CI/CD, GitHub Actions, wandb</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="section">
+        <h3 class="section-label">Experience</h3>
+        <div class="timeline">
+          <article class="job">
+            <div class="job-header">
+              <div>
+                <h4>Job Title</h4>
+                <p class="company">company name</p>
+              </div>
+              <span class="job-date">start date – end date</span>
+            </div>
+            <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+              <li>item 4</li>
             </ul>
+          </article>
 
-            <ul class="copyright">
-               <li>&copy; Copyright 2014 CeeVee</li>
-               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>   
+          <article class="job">
+            <div class="job-header">
+              <div>
+                <h4>Job Title</h4>
+                <p class="company">company name</p>
+              </div>
+              <span class="job-date">start date – end date</span>
+            </div>
+            <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+              <li>item 4</li>
             </ul>
+          </article>
 
-         </div>
+          <article class="job">
+            <div class="job-header">
+              <div>
+                <h4>Previous Roles</h4>
+                <p class="company">job title</p>
+              </div>
+              <span class="job-date">start date – end date</span>
+            </div>
+            <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+              <li>item 4</li>
+            </ul>
+          </article>
+        </div>
+      </section> -->
 
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+      <!-- <section class="section">
+        <h3 class="section-label">Education</h3>
+        <div class="edu-card">
+          <h4>Graduate Studies</h4>
+          <p class="sub">M.Sc.</p>
+          <p class="meta">focus</p>
+        </div>
+      </section> -->
 
-      </div>
+      <!-- <section class="section">
+        <h3 class="section-label">Selected Work &amp; Interests</h3>
+        <div class="project-list">
+          <div class="project-item">
+            <div class="project-icon">🎯</div>
+            <div>
+              <strong>Project 1</strong>
+              <p>Description 1</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-icon">🧠</div>
+            <div>
+              <strong>project2</strong>
+              <p>description 2</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-icon">⚡</div>
+            <div>
+              <strong>Project 3</strong>
+              <p>Description 3</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-icon">🔧</div>
+            <div>
+              <strong>Project 4</strong>
+              <p>Description 4</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
 
-   </footer> <!-- Footer End-->
+      <section class="section">
+        <h3 class="section-label">A Little More About Me</h3>
+        <div class="facts-grid">
+          <div class="fact">🏋️‍♂️ Staying active with regular gym sessions.</div>
+          <div class="fact">🎬 Relaxing with a good series or movie.</div>
+          <div class="fact">🏃‍♂️‍➡️ Clearing my mind with a walk or a short run outside.</div>
+          <div class="fact">📸 Trying to get better at photography, one sunset at a time.</div>
+          <div class="fact">🎮 Unwinding with a quick FIFA match.</div>
+        </div>
+      </section>
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    </div>
+  </main>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>Ryan Golpayegani <span class="sep">·</span> References available on request</p>
+      <p>© 2026 Ryan Golpayegani <span class="sep">·</span> All rights reserved</p>
+    </div>
+  </footer>
 
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+
+    toggle.addEventListener('click', () => {
+      const isLight = root.getAttribute('data-theme') === 'light';
+      if (isLight) {
+        root.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        root.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
 </body>
-
 </html>
